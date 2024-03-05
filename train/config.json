@@ -1,0 +1,46 @@
+{
+    "LunarLander-v2": {
+        "actor_lr": 0.0003,
+        "critic_lr": 0.0003,
+        "alpha_lr": 0.0001,
+        "num_episodes": 1500,
+        "hidden_dim": 128,
+        "gamma": 0.99,
+        "tau": 0.01,
+        "buffer_size": 100000,
+        "minimal_size": 1000,
+        "batch_size": 128,
+        "target_entropy": -1,
+        "env_settings": {
+            "continuous": false,
+            "gravity": -10.0,
+            "enable_wind": false,
+            "wind_power": 15.0,
+            "turbulence_power": 1.5
+        },
+        "seed": {
+            "random_seed": 42,
+            "numpy_seed": 42,
+            "torch_seed": 42
+        }
+    },
+    "PandaReachJoints-v3": {
+        "actor_lr": 0.0003,
+        "critic_lr": 0.0003,
+        "alpha_lr": 0.001,
+        "num_episodes": 3000,
+        "hidden_dim": 256,
+        "gamma": 0.98,
+        "tau": 0.01,
+        "buffer_size": 100000,
+        "minimal_size": 1000,
+        "batch_size": 128,
+        "target_entropy": -1,
+        "env_settings": {},
+        "seed": {
+            "random_seed": 42,
+            "numpy_seed": 42,
+            "torch_seed": 42
+        }
+    }
+}
